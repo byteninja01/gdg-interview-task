@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 1 - SMS Spam Classifier</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main class="container">
+    <!-- Top headline -->
+    <h2 class="task-headline">Task 1</h2>
+
+    <!-- App Header -->
+    <header class="hero">
+      <div>
+        <h1>SMS Spam Classifier</h1>
+        <p class="subtitle">Enter any SMS or email text — get instant prediction</p>
+      </div>
+      <div class="brand">GDG • ML Task</div>
+    </header>
+
+    <!-- Input Section -->
+    <section class="card">
+      <label for="message" class="label">Message</label>
+      <textarea id="message" name="message" placeholder="Type or paste message here..."></textarea>
+
+      <!-- Character count + controls -->
+      <div class="row small">
+        <div id="charCount">0 chars</div>
+        <div class="controls">
+          <button id="sampleBtn" class="btn outline">Use Sample</button>
+          <button id="clearBtn" class="btn ghost">Clear</button>
+          <button id="copyBtn" class="btn ghost">Copy</button>
+        </div>
+      </div>
+
+      <!-- Prediction Button -->
+      <div class="row">
+        <button id="predictBtn" class="btn primary">Predict</button>
+        <div id="spinner" class="spinner" hidden></div>
+      </div>
+
+      <!-- Result -->
+      <div id="resultCard" class="result-card" hidden>
+        <div id="resultText" class="result-text"></div>
+        <div id="probText" class="prob-text"></div>
+        <div id="recText" class="rec-text"></div>
+      </div>
+
+      <hr />
+
+      <!-- Tips Section -->
+      <div class="tips">
+        <h4>Tips</h4>
+        <ul>
+          <li>Try messages like: “Free entry! Click here to win”</li>
+          <li>Or: “Your OTP is 123456”</li>
+          <li>Works for short SMS and longer email bodies.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <small>GDG TASK-1 • Ujjwal Kumar Sharma</small>
+    </footer>
+  </main>
+
+  <!-- Link to JS -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
