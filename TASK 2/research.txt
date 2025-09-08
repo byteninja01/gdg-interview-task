@@ -1,0 +1,3 @@
+Read Reserch Paper : 
+1) A survey of GPT-3 family large language models including ChatGPT and GPT-4 by Katikapalli Subramanyam Kalyan 2024
+2) Atention is All you Need by Ashish Vaswani 2017
